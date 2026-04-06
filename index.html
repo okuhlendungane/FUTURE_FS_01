@@ -14,13 +14,14 @@
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="">
 
     <title>Okuhle Ndungane | Personal Website</title>
 </head>
 <body>
 <!-- Navigation -->
 <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top ">
         <div class="container-lg">
             <a class="navbar-brand" href="index.html">Okuhle Ndungane</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -88,21 +89,21 @@
                 <div class="card" style="width: 20rem;">
                     <div class="card-body">
                         <h5 class="card-title">Database</h5>
-                        <a href="#" class="card-link">MySQL</a>
+                        <a class="card-link">MySQL</a>
                     </div>
                 </div>
                 <div class="card" style="width: 20rem;">
                     <div class="card-body">
                         <h5 class="card-title">Tools</h5>
                         <a class="card-link">Git</a>
-                        <a href="#" class="card-link">Github</a>
+                        <a class="card-link">Github</a>
                     </div>
                 </div>
                 <div class="card" style="width: 20rem;">
                     <div class="card-body">
                         <h5 class="card-title">Mobile Development</h5>
-                        <a href="#" class="card-link">Java</a>
-                        <a href="#" class="card-link">Android Studio</a>
+                        <a class="card-link">Java</a>
+                        <a class="card-link">Android Studio</a>
                     </div>
                 </div>
         </div>
@@ -110,15 +111,125 @@
     <!-- Projects Section -->
     <div class="project-container" id="projects">
         <h1> My Projects</h1>
+        <div class="card-container">
+            <div class="card" style="width: 18rem;">
+                <img src="img/projects/project1.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">G4G Hackathon</h5>
+                    <p class="card-text">Created a prototype for small business owners need cost-effective ways to become more eco-friendly because sustainable practices often increase expenses.</p>
+<!--                    Trigger button for modal-->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project_1">Learn More</button>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="img/projects/project2.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">E-Commerce Platform (in progress)</h5>
+                    <p class="card-text">Mzansi Market is a community-driven marketplace platform designed to connect buyers and sellers in a simple, accessible way. </p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project_2">Learn More</button>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Travel App</h5>
+                    <p class="card-text">The project addresses the challenge of planning trips efficiently while keeping all relevant information in one place. <br>[Link takes you to Github]</p>
+                    <a href="https://github.com/okuhlendungane/TripBuddy-Android-Studios-App" class="cta-button">Learn More</a>
+                </div>
+            </div>
+        </div>
 
-    </div>
-    <!-- Journey Section -->
-    <div class="container" id="journey">
+
+
+                <!-- Modals -->
+                <div class="modal fade" id="project_1" tabindex="-1" aria-labelledby="project_1Label" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="project_1Label">Gaming 4 Girls Hackathon with Umuzi</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <img src="img/projects/project1.png" class="img-fluid rounded" alt="Project 1">
+                                        <img src="img/projects/project1.1.png" class="img-fluid rounded" alt="Project 1">
+                                        <img src="img/projects/project1.2.png" class="img-fluid rounded" alt="Project 1">
+
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h3>Project Overview</h3>
+                                        <p>Provided a solution as a group of 3 by planing, designing and creating a wireframe and prototype for small business owners who need cost-effective ways to become more eco-friendly. Sustainable practices often increase expenses, and our solution helps bridge that gap.</p>
+                                        <h4>Key Features</h4>
+                                        <ul>
+                                            <li>Sustainability analysis tool</li>
+                                            <li>Community forum for sustainable business owners</li>
+                                            <li>Read-aloud feature to promote inclusivity</li>
+                                            <li>Dark Mode for better user experience</li>
+                                            <li>Gamification</li>
+                                        </ul>
+                                        <h4>Skills Learn</h4>
+                                        <p>Protype Design, Team Work, Problem Solving, Wireframe</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        <div class="modal fade" id="project_2" tabindex="-1" aria-labelledby="project_1Label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="project_2Label">C-2-C Ecommerce Platform</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src="img/projects/project2.png" class="img-fluid rounded" alt="Project 1">
+
+
+                            </div>
+                            <div class="col-md-6">
+                                <h3>Project Overview</h3>
+                                <p>The project addresses the challenge of creating an accessible marketplace for buyers and sellers in the informal sector. Research into existing platforms highlighted inefficiencies in delivery modes to informal sectors as well as the trust in online payments.</p>
+                                <h4>Key Features</h4>
+                                <ul>
+                                    <li>PEP store delivery integration (PAXI) for accessiblility</li>
+                                    <li>Hybrid payment system (Online or in person at PEP store)</li>
+                                    <li>Product listings, editing, and browsing</li>
+                                </ul>
+                                <h4>Skills & Languages Learn</h4>
+                                <p>PHP, MySQL. Bootstrap. Improved in database design and management, Full-stack development, with a focus on scalability and user experience.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
     </div>
     <!-- Contact Section -->
-    <div class="container" id="contact">
+    <div class="contact-container" id="contact">
+        <h1>Contact Me</h1>
+        <form action="insert.php" method="post">
+        <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email" placeholder="name@example.com" name="email">
+        </div>
+        <div class="mb-3">
+            <label for="message" class="form-label">Send me a message</label>
+            <textarea class="form-control" id="message" rows="3" name="message"></textarea>
+            <input type="submit" value="Submit" class="cta-button">
+        </div>
+        </form>
     </div>
-
 </main>
 
 
