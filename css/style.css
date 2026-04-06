@@ -147,10 +147,10 @@ body{
     display: inline-block;
     margin-bottom: var(--margin-sm);
     margin-right: var(--margin-sm);
+    border:none;
 }
 
 .card-link:hover {
-    background-color: var(--color-1);
     color: var(--text-color);
 }
 
@@ -182,6 +182,10 @@ body{
 .project-container h1{
     font-weight: 600;
 }
+.project-container button{
+    background-color: var(--primary-color);
+
+}
 
 /*contact*/
 .contact-container{
@@ -189,6 +193,7 @@ body{
     padding: min(2em, 15%);
     margin: var(--margin-lg);
     border-radius: var(--radius-md);
+    font-weight: 450;
 
 }
 .contact-container h1{
@@ -197,4 +202,14 @@ body{
 }
 .contact-container input{
     margin-top: var(--margin-md);
+}
+input[type="text"], input[type="email"]{
+    width: 30%;
+    height: 50px;
+}
+footer{
+    background-color: var(--secondary-color) !important;
+}
+footer a{
+    text-decoration: none;
 }

@@ -12,13 +12,14 @@
         die("ERROR: Could not connect. " . mysqli_connect_error());
     }
     // Collect form data
+    $name=$_REQUEST['name'];
     $email = $_REQUEST['email'];
     $message = $_REQUEST['message'];
     // Insert data into the database
-    $sql = "INSERT INTO messages (email, message) VALUES ('$email','$message')";
+    $sql = "INSERT INTO messages (name,email, message) VALUES ('$name', $email','$message')";
     if (mysqli_query($conn, $sql)) {
         echo "<h3>Data stored in the database successfully.</h3>";
-        echo nl2br("\n$email\n $message");
+        echo nl2br("$name\n$email\n $message");
     } else {
         echo "ERROR: Sorry $sql. " . mysqli_error($conn);
     }
