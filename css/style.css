@@ -186,6 +186,9 @@ body{
     background-color: var(--primary-color);
 
 }
+.col-md-6{
+    text-align: left;
+}
 
 /*contact*/
 .contact-container{
